@@ -1,0 +1,12 @@
+img {
+    height: 30%;
+    width: 25%;
+}
+
+nav {
+    
+}
+/* may need to over-ride bootstrap box-sizing: border-box 
+.selector-for-some-widget {
+  box-sizing: content-box;
+} */
