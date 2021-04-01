@@ -1,10 +1,66 @@
+#main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 img {
     height: 30%;
     width: 25%;
 }
 
-nav {
-    
+#bottom {
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#linkedIn {
+  background-image: url('/images/LI-In-Bug.png');
+  background-size:cover;
+ 
+}
+
+#github {
+  background-image: url('/images/GitHub-Mark-Light-120px-plus.png');
+  background-size: cover;
+}
+
+form {
+  text-align: right;
+}
+
+#headNav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+#headNav a {
+  float:right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.2rem 1.4rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#headNav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+#date-time  {
+  float: left;
+  text-align: left;
+  vertical-align:text-top;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+  
 }
 /* may need to over-ride bootstrap box-sizing: border-box 
 .selector-for-some-widget {

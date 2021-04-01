@@ -1,7 +1,8 @@
 
 // Time and Date
+
 function makeDate(Date) {
-        
+    
     var month = Date.getMonth();
     if (month == 0) {
         month = "January";
@@ -30,21 +31,26 @@ function makeDate(Date) {
     } // to get Month in string format
 
     function makeTime(Date) {
-        var hour = Date.getHours();
+       
         var minutes = Date.getMinutes();
         if (minutes < 10) {
-            minutes = ("0", minutes);
+            minutes = ("0") + minutes;
         } else {
             minutes = minutes;
         }
+        
 
     }
     
     var date = month + ' ' + Date.getDate() + ', ' + Date.getFullYear() +
-     '<br />' + Date.getHours() + ":" + Date.getMinutes();
+    "&nbsp;&nbsp;" + Date.getHours() + ":" + Date.getMinutes();
         
     document.getElementById("date-time").innerHTML = date;
+
+    // call function again in 1 min
+    setInterval(makeTime, 30000);
     
 }
-var today = new Date();
+let today = new Date();
+    
 window.onload = makeDate(today);
