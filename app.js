@@ -30,25 +30,14 @@ function makeDate(Date) {
         month = "December";
     } // to get Month in string format
 
-    function makeTime(Date) {
-       
-        var minutes = Date.getMinutes();
-        if (minutes < 10) {
-            minutes = ("0") + minutes;
-        } else {
-            minutes = minutes;
-        }
-        
-
-    }
+    
     
     var date = month + ' ' + Date.getDate() + ', ' + Date.getFullYear() +
     "&nbsp;&nbsp;" + Date.getHours() + ":" + Date.getMinutes();
         
     document.getElementById("date-time").innerHTML = date;
 
-    // call function again in 1 min
-    setInterval(makeTime, 30000);
+   
     
 }
 let today = new Date();

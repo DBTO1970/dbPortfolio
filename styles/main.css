@@ -5,7 +5,7 @@
 
 img {
     height: 30%;
-    width: 25%;
+    width: 30%;
 }
 
 #bottom {
@@ -32,8 +32,6 @@ form {
 #headNav {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 3;
 }
@@ -53,6 +51,8 @@ form {
 }
 
 #date-time  {
+  justify-self: end;
+  align-self: center;
   float: left;
   text-align: left;
   vertical-align:text-top;
