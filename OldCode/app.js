@@ -1,7 +1,7 @@
 
 // Time and Date
 
-function makeDate(Date) {
+/*function makeDate(Date) {
     
     var month = Date.getMonth();
     if (month == 0) {
@@ -32,14 +32,16 @@ function makeDate(Date) {
 
     
     
-    var date = month + ' ' + Date.getDate() + ', ' + Date.getFullYear() +
+    let date = month + ' ' + Date.getDate() + ', ' + Date.getFullYear() +
     "&nbsp;&nbsp;" + Date.getHours() + ":" + Date.getMinutes();
+    
         
     document.getElementById("date-time").innerHTML = date;
 
    
     
-}
+}*/
 let today = new Date();
     
-window.onload = makeDate(today);
+//window.onload = makeDate(today);
+document.getElementById("date-time").innerHTML = today;

@@ -1,11 +1,12 @@
 #main {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 2rem;
 }
 
-img {
-    height: 30%;
-    width: 30%;
+img.siteImg {
+  height: auto;
+  width: 50%;
+
 }
 
 #bottom {
@@ -14,26 +15,31 @@ img {
     text-align: center;
 }
 
-#linkedIn {
-  background-image: url('/images/LI-In-Bug.png');
-  background-size:cover;
- 
+#dbHeadshot {
+  width: 50%;
 }
 
-#github {
-  background-image: url('/images/GitHub-Mark-Light-120px-plus.png');
-  background-size: cover;
+#home {
+  margin-left: 2rem;
 }
 
+
+#contact {
+  
+  margin-left: 2rem;
+}
 form {
-  text-align: right;
+  text-align: left;
 }
 
 #headNav {
   overflow: hidden;
   background-color: #333;
   width: 100%;
+  margin: 0;
+  padding: 0;
   z-index: 3;
+  top: 0;
 }
 #headNav a {
   float:right;
@@ -60,7 +66,12 @@ form {
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem;
+  margin-left: 2rem;
   
+}
+
+#portfolio {
+  margin-left: 2rem;
 }
 /* may need to over-ride bootstrap box-sizing: border-box 
 .selector-for-some-widget {
