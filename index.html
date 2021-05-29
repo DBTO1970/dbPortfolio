@@ -15,113 +15,157 @@
    
     <title>DonBarto.com</title>
 </head>
-<body>
-    <div class="row align-items-end sticky-top" id="headNav">
-        <div class="col" id="date-time"></div>
-        <nav class="col">
-            <a href="#home">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#portfolio">Portfolio</a>
-        </nav>
-    </div>
-    <div id="main">
-    <div id="home">
-        <div id="title">
-            <p class="h1">Don Barto, Jr</p>
-            <p class="h4"><em>Web Development</em></p>
-            <div id="myQuote">
-                <blockquote>
-                    "As a seasoned media professional, I see the true scope of what connected people and devices can accomplish, and it is astounding.
-                    <br /> Delivering applications via these connections will propell us to new heights.  I want to be on that ride."
-                </blockquote>
-            </div>
-        </div>
-    </div>
-    <p id="contact">
-        <div class="row">
-            <div class="col-6 form-group">
-                <form id="contact-form" method="post" action="contact-form-handler.php">
-                    <p class="h3" class="col-md">Contact</p>
-                    <label id="name-label" for="name">Name: </label>
-                    <input type="text" id="name" name="Name"><br>
-                    <label id="email-label" for="email" >eMail: </label>
-                    <input id="email" name="email" type="email" placeholder="&nbsp;you@wherever.com" required><br><br>
-                    <label id="name-contact-text" for="contact-text">Leave a note: </label><br>
-                    <textarea id="contact-text" name="contact-text" rows="5" cols="50" placeholder="How can I help you?">
+<body> 
+    <div id="top" class="container-fluid">
 
-                    </textarea>
-                    <br><br>
-                    <button class="btn btn-primary" form_id="contact-form" type="submit" id="submit" value="Submit">Submit</button>
-                    <br>
-                </form>
-            </div>
-            <div class="col-6">
-                <img src="/images/headShot.jpg" alt="don Barto photo" id="dbHeadshot"/>
-                <div class="row">
+        <div class="row align-items-end sticky-top" id="headNav">
+            <div class="col-sm" id="date-time"></div>
             
-                    <div class="col-3"><p class="h5"><a class="btn-info" id="linkedIn" href="https://www.linkedin.com/in/don-barto-jr-085ab31/" target="_blank">LinkedIn</a></p></div>
-                    <div class="col-3"><p class="h5"><a class="btn-info" id="github" href="https://github.com/DBTO1970" target="_blank">Github</a></p></div>
-                </div>
-            </div>
-            
+            <nav class="col-lg">
+                <a href="#about">About</a>
+                <a href="https://radioplayer.donbarto.com/" target="_blank">Radio</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <a href="#top">Home</a>
+            </nav>
         </div>
-        
+        <div id="main">
+            <div class="row">
+                <div id="title" class="col-md">
+                    <p class="h2">Don Barto, Jr</p>
+                    <p class="h4"><em>Web Development</em></p>
+                    <div id="myQuote">
+                        <blockquote><em>
+                            "As a seasoned media professional, I see the true scope of what connected people and devices can accomplish, and it is astounding.  Delivering applications via these connections will propel us to new heights.  I want to be on that ride."
+                        </em></blockquote>
+                    </div>
+                </div>
+                <div class="col-md" id="home">
+                    <img src="/images/headShot.jpg" alt="don Barto photo" id="dbHeadshot"/><br />
+                
+                    
+                    <div class="row">
+                        <div class="col-sm"><button class="btn btn-info"><a id="linkedIn" href="https://www.linkedin.com/in/don-barto-jr-085ab31/" target="_blank">LinkedIn</a></button></div>
+                        <div class="col-sm"><button class="btn btn-info"><a id="github" href="https://github.com/DBTO1970" target="_blank">Github</a></button></div>
+                    </div>
+                </div>
+            
+                <br /><br />
+            </div>
+                    
+                
+            
+            <div id="contact" class="row">
+                
+                    <div class="col-md form-group">
+                        <form id="contact-form" method="post" action="contact-form-handler.php">
+                            <p class="h3" class="col-md">Contact</p>
+                            <label id="name-label" for="name">Name: </label>
+                            <input type="text" id="name" name="Name"><br>
+                            <label id="email-label" for="email" >eMail: </label>
+                            <input id="email" name="email" type="email" placeholder="you@wherever.com" required><br><br>
+                            <label id="name-contact-text" for="contact-text">Leave a note: </label><br>
+                            <textarea id="contact-text" name="contact-text" rows="4" cols="50" placeholder="How can I help you?"></textarea>
+                            <br /><br />
+                            <button class="btn btn-info" form_id="contact-form" type="submit" id="submit" value="Submit">Submit</button>
+                            <br />
+                        </form>
+                    </div>
+                
+                    
+                
+                
+                    <br />
+                    
+                
+            </div>
+            
             <br>
             
+            <div id="portfolio">
+                <div class="row"><p class="h3 col-lg">Portfolio</p></div>
+                <div class="row">
+                    <div class="col-md" id="vaccineFinder">
+                        <p class="h4">Maryland Vaccine Finder App</p>
+                        <img src="images\vaccineFinder_screen.png" alt="screen shot of MarylandVaccineFinder.DonBarto.com" class="siteImg">
+                        <p>This web-based application is an exercise in pulling JSON and GeoJSON data via API's from the Maryland State Coronavirus data set.  Mainly case and vaccination data were used and called on.</p>
+                        <p>The main goal of this project was to put users in touch with ALL resources within the state of Maryland where they may schedule vaccinations.  The application also provided real-time data tracking for vaccinations given and current cases.</p>
+                        <p>The application used HTML5, CSS, Javascript, JQuery, and JSON.  An API was configured and used to pull all Json and GeoJSON data from the state data set.  Json data was parsed, and results displayed.</p>
+                        <a class="btn btn-info" href="https://marylandvaccinefinder.donbarto.com/" target="_blank">Visit Site</a><br>
+                    </div><br /><br />
+                
+                    <div class="col-md" id="morningRituals">
+                        <p class="h4">Morning Rituals Soap</p>
+                        <img src="images\morningRituals_screen.png" alt="screen shot of MorningRituals.com" class="siteImg">
+                        <p>Morning Rituals Soap is a vendor-facing site, with the purpose of introducing them to handmade soap, which could feature their own coffee/tea products as an ingredient.</p>
+                        <p>This site is based on Wordpress CMS, with some custom CSS for styling.  The site is hosted on donbarto.com, with wordpress administration.</p>
+                        <a class="btn btn-info" href="http://morningritualsoap.com/" target="_blank">Visit Site</a><br>
+                    </div><br /><br />
+                    <div class="col-md" id="virtuallyReady">
+                        <p class="h4">Virtually Ready</p>
+                        <img src="images\virtually_ready.png" alt="screen shot of virtually-ready.donbarto.com" class="siteImg">
+                        <p>Virtually Ready was a professional blog I started at the begining of the 2020 COVID-19 global pandemic.  It was created as an engagement tool, and proof of concept for a blog targeting professionals forced to work and perform in virtual environments.</p>
+                        <p>This was not my first Wordpress site, but this was the most developed, in terms of content management and heavy reliance on themes.</p>
+                        <p>This project used Wordpress CMS for build, as well as for subsequent blog posts via Wordpress mobile app and site admin.  Technologies used were HTML5, CSS3, JavaScript, Wordpress themes and CMS.</p>
+                        <a class="btn btn-info" href="https://virtually-ready.donbarto.com/" target="_blank">Visit Site</a><br>
+                    </div><br /><br />
+                </div>
+                
+            </div><br>
+            <div id="about">
+                <div class="row">
+                    <p class="h3 col-md">About Me</p>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-md">
+                        <p>
+                            Thank you for taking a look at my budding portfolio site.  In addition to the projects featured in the 'Portfolio' section, this site was created using HTML, CSS, Javascript, and Bootstrap 4 framework.
+                            I am using a php script to handle the contact form submission, and javascript to redirect to the Thank You page.  
+                            Additionally, I am hosting this site in a shared hosting environment, and personally administering all data management.
+                            Of note on the site, javascript is being used to display the Date and Time (continually updating) in the top nav portion of this page.  
+                            Also, the 'Radio' menu item opens a custom internet radio player.  
+                            This is still a work in progress, with additional features to include: Live display of artist/song info and the ability to directly enter a station url.
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <p>
+                            Professionally, I have worked in the digital a/v industry since 1998, with near-constant interaction with web-based projects such as live stream events and digital film delivery.  
+                            When the global COVID-19 pandemic forced shutdowns and furloughs, I decided to use the time to enhance my skill set.  This indluded taking a Web Development certificate program at Howard Community College in Maryland.
+                            This program provided the right impetus to continue learning and growing my web and software development skills.
+                        </p>
+                        <button class="btn btn-info"><a href="/files/DBarto_resumeCurrent.pdf" target="_blank">My Resume</a></button>
+                    </div>
+                    
+                        
+                </div>
+                
+                
+                    
+                
+                
+            </div>
         
-    </div>
+            <div class="container" id="bottom">
+                
+
+                <div class="row">
+                    <div class="col-md"><button class="btn btn-info"><a id="linkedIn" href="https://www.linkedin.com/in/don-barto-jr-085ab31/" target="_blank">LinkedIn</a></button></div>
+                    <div class="col-md"><button class="btn btn-info"><a id="github" href="https://github.com/DBTO1970" target="_blank">Github</a></button></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <footer>&copy;2021 DonBarto.com</footer>
+                        <br>
+                    </div>
+                </div>
+            </div>
     
-    <br>
+        </div>
     
-    <div id="portfolio">
-        <div class="row"><p class="h3 col-md">Portfolio</p></div>
-        <div class="row">
-            <div class="col-4" id="vaccineFinder">
-                <p class="h4">Maryland Vaccine Finder App</p>
-                <img src="images\vaccineFinder_screen.png" alt="screen shot of MarylandVaccineFinder.DonBarto.com" class="siteImg">
-                <p>This web-based application is an exercise in pulling JSON and GeoJSON data via API's from the Maryland State Coronavirus data set.  Mainly case and vaccination data were used and called on.</p>
-                <p>The main goal of this project was to put users in touch with ALL resources within the state of Maryland where they may schedule vaccinations.  The application also provided real-time data tracking for vaccinations given and current cases.</p>
-                <p>The application used HTML5, CSS, Javascript, JQuery, and JSON.  An API was configured and used to pull all Json and GeoJSON data from the state data set.  Json data was parsed, and results displayed.</p>
-                <a class="btn btn-info" href="https://marylandvaccinefinder.donbarto.com/" target="_blank">Visit Site</a><br>
-            </div>
-        
-            <div class="col-4" id="morningRituals">
-                <p class="h4">Morning Rituals Soap</p>
-                <img src="images\morningRituals_screen.png" alt="screen shot of MorningRituals.com" class="siteImg">
-                <p>Morning Rituals Soap is a vendor-facing site, with the purpose of introducing them to handmade soap, which could feature their own coffee/tea products as an ingredient.</p>
-                <p>This site is based on Wordpress CMS, with some custom CSS for styling.  The site is hosted on donbarto.com, with wordpress administration.</p>
-                <a class="btn btn-info" href="http://morningritualsoap.com/" target="_blank">Visit Site</a><br>
-            </div>
-            <div class="col-4" id="virtuallyReady">
-                <p class="h4">Virtually Ready</p>
-                <img src="images\virtually_ready.png" alt="screen shot of virtually-ready.donbarto.com" class="siteImg">
-                <p>Virtually Ready was a professional blog I started at the begining of the 2020 COVID-19 global pandemic.  It was created as an engagement tool, and proof of concept for a blog targeting professionals forced to work and perform in virtual environments.</p>
-                <p>This was not my first Wordpress site, but this was the most developed, in terms of content management and heavy reliance on themes.</p>
-                <p>This project used Wordpress CMS for build, as well as for subsequent blog posts via Wordpress mobile app and site admin.  Technologies used were HTML5, CSS3, JavaScript, Wordpress themes and CMS.</p>
-                <a class="btn btn-info" href="https://virtually-ready.donbarto.com/" target="_blank">Visit Site</a><br>
-            </div>
-        </div>
-        
-    </div><br>
-</div>
-    <div class="container" id="bottom">
-        
-
-        <div class="row">
-            
-            <div class="col-lg"><p class="h5"><a class="btn-info" id="linkedIn" href="https://www.linkedin.com/in/don-barto-jr-085ab31/" target="_blank">LinkedIn</a></p></div>
-            <div class="col-lg"><p class="h5"><a class="btn-info" id="github" href="https://github.com/DBTO1970" target="_blank">Github</a></p></div>
-        </div>
-        <div class="row">
-            <div class="col-xl">
-                <footer>&copy;2021 DonBarto.com</footer>
-                <br>
-            </div>
         </div>
     </div>
-</div>
-
-
 <script src="/js/app.js"></script>
 </body>
 </html>

@@ -14,3 +14,11 @@ function updateTime() {
 }
 updateTime();
 
+function thankYou() {
+    window.open('thankYou.html');
+    //confirm('Thank you for connecting!\nI will get back to you shortly.');
+    //return false;
+    
+}
+let submitBtn = document.getElementById('submit');
+submitBtn.addEventListener('click', thankYou);

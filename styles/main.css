@@ -1,41 +1,65 @@
+
+body {
+  width: 100%;
+  padding: 2rem;;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(44, 52, 77);
+}
 #main {
-  max-width: 100%;
+  width: 100%;
   margin: 2rem;
+  color: white;
+  
 }
 
 img.siteImg {
   height: auto;
   width: 50%;
+  padding: .5rem;
+  margin-bottom: 1rem;
 
 }
 
 #bottom {
-    margin-top: 2rem;
+   margin-left: auto;
+   margin-right: auto;
     padding: 2rem;
     text-align: center;
+    color: white;
+    
 }
 
 #dbHeadshot {
-  width: 50%;
+  width: 70%;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 #home {
-  margin-left: 2rem;
+  margin: 2rem;
+
 }
 
-
-#contact {
+button {
+  padding: .5rem;
+  margin: .5rem;
   
+}
+#contact {
+  margin-top: 1rem;
   margin-left: 2rem;
+  margin-right: 5rem;
 }
 form {
   text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #headNav {
   overflow: hidden;
-  background-color: #333;
-  width: 100%;
+  background-color: rgb(44, 52, 77);
   margin: 0;
   padding: 0;
   z-index: 3;
@@ -72,6 +96,26 @@ form {
 
 #portfolio {
   margin-left: 2rem;
+  color: white;
+  margin-right: 5rem;
+}
+
+#linkedIn {
+  color: white;
+}
+
+#github {
+  color: white;
+}
+
+.btn a {
+  color: white;
+}
+
+#about {
+  margin-left: 2rem;
+  color: white;
+  margin-right: 5rem;;
 }
 /* may need to over-ride bootstrap box-sizing: border-box 
 .selector-for-some-widget {
