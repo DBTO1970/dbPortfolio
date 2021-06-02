@@ -20,5 +20,5 @@ function thankYou() {
     //return false;
     
 }
-let submitBtn = document.getElementById('submit');
-submitBtn.addEventListener('click', thankYou);
+let submitBtn = document.getElementById('contact-form');
+submitBtn.addEventListener('submit', thankYou);

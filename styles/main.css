@@ -36,10 +36,7 @@ img.siteImg {
   margin-bottom: 1rem;
 }
 
-#home {
-  margin: 2rem;
 
-}
 
 button {
   padding: .5rem;
@@ -64,6 +61,7 @@ form {
   padding: 0;
   z-index: 3;
   top: 0;
+  width: 100%;
 }
 #headNav a {
   float:right;
@@ -82,7 +80,7 @@ form {
 
 #date-time  {
   justify-self: end;
-  align-self: center;
+  
   float: left;
   text-align: left;
   vertical-align:text-top;
