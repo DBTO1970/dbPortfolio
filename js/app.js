@@ -9,7 +9,7 @@ function updateTime() {
     function dateTimeClock() {
         var upDate = new Date();
         var displayTime = upDate.toLocaleTimeString();
-        document.getElementById("date-time").innerHTML = today.toDateString() + "<br />" + displayTime;
+        document.getElementById("date-time").innerHTML = today.toDateString() + "&nbsp;|&nbsp;" + displayTime;
     }
 }
 updateTime();

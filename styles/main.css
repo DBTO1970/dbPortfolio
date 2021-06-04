@@ -6,6 +6,7 @@ body {
   margin-right: auto;
   background: rgb(44, 52, 77);
 }
+
 #main {
   width: 100%;
   margin: 2rem;
@@ -53,7 +54,7 @@ form {
   margin-left: auto;
   margin-right: auto;
 }
-
+*/
 #headNav {
   overflow: hidden;
   background-color: rgb(44, 52, 77);
@@ -119,3 +120,4 @@ form {
 .selector-for-some-widget {
   box-sizing: content-box;
 } */
+
