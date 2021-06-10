@@ -9,12 +9,18 @@ header h2 {
 #date-time {
     color: #CEC8FF;
 }
+
+#header-logo {
+    height: 10rem;
+    width: 10rem;
+}
 .site-footer {
     background-image: linear-gradient(#96bbff, white);
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .jumbotron {
+    
     margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, #5637DD, #3046C5, #1a8cce);
@@ -29,4 +35,14 @@ header h2 {
 
 .navbar {
     background-color: #271db1;
+}
+
+#db-photo {
+    width: 80%;
+    padding: 2rem;
+}
+
+#db-intro {
+    padding: 5rem;
+    width: 100%;
 }

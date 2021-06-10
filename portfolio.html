@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Additional CSS -->
+    <link href="styles/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="icon" type="image" href="images/favicon.ico"/>
+
+    <title> DB | Portfolio </title>
+</head>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 align-self-center">
+                    <h1>Don Barto, Jr</h1>
+                    <h2 class="lead">Web Development</h2>
+                    
+                </div>
+                <div class="col-r col-12 col-sm-4 offset-sm-2">
+                    <img src="images/db-concept-logo.svg" class="img-fluid" id="header-logo" alt="Logo"/>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="/images/db-concept-logo.svg" height="30" width="30" alt="Site Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#db-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="db-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav--item"><a class="nav-link"  href="about.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav--item"><a class="nav-link"  href="#"><i class="fa fa-list fa-lg"></i> Portfolio</a></li>
+                    <li class="nav--item"><a class="nav-link"  href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                
+
+            </div>
+            <div class="col"><span id="date-time"></span></div>
+        </div>
+    </nav>
+    <div class="container p-2">
+            <div class="row">
+                <div class="col-12 h3">Portfolio</div>
+            </div>
+            <div class="card col">
+                <div class="card-body">
+                    <h4 class="card-title m-2">
+                        Vaccine Finder App
+                    </h4>
+                                  
+                    <div class="card-text">
+                        This web-based application is an exercise in pulling JSON and GeoJSON data via API's from the Maryland State Coronavirus data set.  Mainly case and vaccination data were used and called on.
+
+                        The main goal of this project was to put users in touch with ALL resources within the state of Maryland where they may schedule vaccinations.  The application also provided real-time data tracking for vaccinations given and current cases.
+
+                        The application used HTML5, CSS, Javascript, JQuery, and JSON.  An API was configured and used to pull all Json and GeoJSON data from the state data set.  Json data was parsed, and results displayed.
+                    </div>
+                    <a href="https://marylandvaccinefinder.donbarto.com/" class="btn btn-primary m-4" target="_blank">Visit Site</a>
+                    <img class="card-img m-2" width="80%" src="/images/vaccineFinder_screen.png" alt="Screen shot of Vaccine Finder App"/>
+                </div>
+            </div>
+
+            <div class="card col">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Morning Rituals Soap
+                    </h4>
+
+                    <div class="card-text">
+                        Morning Rituals Soap is a vendor-facing site, with the purpose of introducing them to handmade soap, which could feature their own coffee/tea products as an ingredient.
+
+                        This site is based on Wordpress CMS, with some custom CSS for styling.  The site is hosted on donbarto.com, with wordpress administration.
+                    </div>
+                    <a href="https://morningritualsoap.com/" class="btn btn-primary m-4" target="_blank">Visit Site</a>
+                    <img class="card-img m-2" width="80%" src="/images/morningRituals_screen.png" alt="Screen shot of Vaccine Finder App"/>
+                </div>
+            </div>
+
+            <div class="card col">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        Virtually Ready
+                    </h4>
+
+                    <div class="card-text">
+                        Virtually Ready was a professional blog I started at the begining of the 2020 COVID-19 global pandemic.  It was created as an engagement tool, and proof of concept for a blog targeting professionals forced to work and perform in virtual environments.
+
+                        This was not my first Wordpress site, but this was the most developed, in terms of content management and heavy reliance on themes.
+
+                        This project used Wordpress CMS for build, as well as for subsequent blog posts via Wordpress mobile app and site admin.  Technologies used were HTML5, CSS3, JavaScript, Wordpress themes and CMS.
+                    </div>
+                    <a href="https://virtually-ready.donbarto.com/" class="btn btn-primary m-4" target="_blank">Visit Site</a>
+                    <img class="card-img m-2" width="80%" src="/images/virtually_ready.png" alt="Screen shot of Vaccine Finder App"/>
+                </div>
+            </div>
+    </div>
+    <footer class="site-footer">
+        <div class="col-6 offset-4 col-sm-5 text-center">
+            <h5>Social</h5>
+            <a class="btn btn-social-icon btn-github" href="https://github.com/DBTO1970"><i class="fa fa-github"></i></a>
+            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/don-barto-jr-085ab31/"><i class="fa fa-linkedin"></i></a>
+            <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/DonBartoJr1"><i class="fa fa-twitter"></i></a>
+        </div>
+        <p>&copy;2021 DonBarto.com</p>
+    </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

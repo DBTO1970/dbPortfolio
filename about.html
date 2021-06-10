@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Additional CSS -->
+    <link href="styles/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="icon" type="image" href="images/favicon.ico"/>
+
+    <title> DB | About Me </title>
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 align-self-center">
+                    <h1>Don Barto, Jr</h1>
+                    <h2 class="lead">Web Development</h2>
+                    
+                </div>
+                <div class="col-r col-12 col-sm-4 offset-sm-2">
+                    <img src="images/db-concept-logo.svg" class="img-fluid" id="header-logo" alt="Logo"/>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="/images/db-concept-logo.svg" height="30" width="30" alt="Site Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#db-navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="db-navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav--item"><a class="nav-link"  href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav--item"><a class="nav-link"  href="portfolio.html"><i class="fa fa-list fa-lg"></i> Portfolio</a></li>
+                    <li class="nav--item"><a class="nav-link"  href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                
+
+            </div>
+            <div class="col"><span id="date-time"></span></div>
+        </div>
+    </nav>
+    <div class="container p-2">
+        <div class="row">
+            <div class="col-12 h3">About Me</div>
+            <div class="col-5 col-md">
+            <p>Thank you for taking a look at my budding portfolio site.  In addition to the projects featured in the 'Portfolio' section, this site was created using HTML, CSS, Javascript, and Bootstrap 4 framework.</p>
+
+            <p>I am using a php script to handle the contact form submission, and javascript to redirect to the Thank You page.  Additionally, I am hosting this site in a shared hosting environment, and personally administering all data management.  Of note on the site, javascript is being used to display the Date and Time (continually updating) in the top nav portion of this page.  Also, the 'Radio' menu item opens a custom internet radio player.  
+            This is still a work in progress, with additional features to include: Live display of artist/song info and the ability to directly enter a station url.</p>
+            </div>
+            <div class="col-5 col-md">
+                <p>
+                    Professionally, I have worked in the digital a/v industry since 1998, with near-constant interaction with web-based projects such as live stream events and digital film delivery.  When the global COVID-19 pandemic forced shutdowns and furloughs, I decided to use the time to enhance my skill set.  This included taking a Web Development certificate program at Howard Community College in Maryland.
+                </p>
+
+                <p>
+                    This program provided the right impetus to continue learning and growing my web and software development skills.
+                </p>
+            </div>
+        </div>
+        <div class="col-12 text-center p-5"><a class="btn btn-primary" href="/files/DBarto_resumeCurrent.pdf" target="_blank">Resume</a></div>
+    </div>
+        <footer class="site-footer">
+            <div class="col-6 offset-4 col-sm-5 text-center">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-github" href="https://github.com/DBTO1970"><i class="fa fa-github"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/don-barto-jr-085ab31/"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/DonBartoJr1"><i class="fa fa-twitter"></i></a>
+            </div>
+            <p>&copy;2021 DonBarto.com</p>
+        </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
