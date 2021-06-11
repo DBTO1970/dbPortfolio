@@ -35,10 +35,15 @@ header h2 {
 
 .navbar {
     background-color: #271db1;
+    
+}
+
+#db-navbar {
+    background-color: #271db1;
 }
 
 #db-photo {
-    width: 80%;
+    
     padding: 2rem;
 }
 
