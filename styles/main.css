@@ -43,11 +43,20 @@ header h2 {
     but then the navbar stops working as desired, with showing/hiding dependent on scrolling. */
     /*top: 0;  Was -50px; in the example, but that's irrelevant for the Safari issue. */
     width: 100%;
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    /*transition: top 0.3s;  Transition effect when sliding down (and up) */
 }
 
 #db-navbar {
     background-color: #271db1;
+    overflow: visible; /* Solution for the Safari issue with navbar dropdown menu failing to show:
+    Simply setting this overflow CSS property of the navbar to visible instead of hidden. */
+    /* background-color: #333; */
+    /* position: fixed; Safari issue with navbar dropdown menu failing to show up front:
+    Issue: Only if position:sticky the dropdown menu works in Safari,
+    but then the navbar stops working as desired, with showing/hiding dependent on scrolling. */
+    /*top: 0;  Was -50px; in the example, but that's irrelevant for the Safari issue. */
+    width: 100%;
+    color: black;
 }
 
 #db-photo {
