@@ -59,16 +59,6 @@ header h2 {
     align-content: flex-end;
 }
 
-/* @media only screen and (max-width: 414px) {
-    .jumbotron {
-        display: none;
-    }
 
-    .site-footer {
-        background-image: linear-gradient(black, white);
-        
-        padding: 5px;
-    } 
-} */
 
 
