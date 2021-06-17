@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 h2 {
     color: #3046C5;
 }
@@ -16,7 +20,7 @@ header h2 {
     width: 10rem;
 }
 .site-footer {
-    background-image: linear-gradient(#96bbff, white);
+    background: linear-gradient(#96bbff, white);
     padding: 20px;
 }
 
@@ -24,7 +28,7 @@ header h2 {
     width: 100%;
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #1a8cce);
+    background: linear-gradient(to right, #5637DD, #3046C5, #1a8cce);
     color: white;
 }
 
@@ -41,13 +45,7 @@ header h2 {
 
 #db-navbar {
     background-color: #271db1;
-    overflow: visible; /* Solution for the Safari issue with navbar dropdown menu failing to show:
-    Simply setting this overflow CSS property of the navbar to visible instead of hidden. */
-    /* background-color: #333; */
-    /* position: fixed; Safari issue with navbar dropdown menu failing to show up front:
-    Issue: Only if position:sticky the dropdown menu works in Safari,
-    but then the navbar stops working as desired, with showing/hiding dependent on scrolling. */
-    /*top: 0;  Was -50px; in the example, but that's irrelevant for the Safari issue. */
+    
     width: 100%;
     color: black;
 }
@@ -56,28 +54,21 @@ header h2 {
     
     padding: 2rem;
 }
-
-#db-intro {
-    padding: 5rem;
-    width: 100%;
-}
-
 .content-right {
     text-align: right;
     align-content: flex-end;
 }
-/* @media(min-width:320px) and (max-width:1024px){
-.left2 {
-    text-align: left !important;
-}
 
-.card__price {
-    text-align: right !important;
-}
+/* @media only screen and (max-width: 414px) {
+    .jumbotron {
+        display: none;
+    }
 
-.left2 {
-    text-align: left !important;
-
-}
+    .site-footer {
+        background-image: linear-gradient(black, white);
+        
+        padding: 5px;
+    } 
 } */
+
 
