@@ -62,11 +62,11 @@
         <form id="contact-form" method="post" action="contact-form-handler.php">
             <h3 class="col m-2 p-2">Contact</h3>
             <label id="name-label" for="name">Name: </label>
-            <input type="text" id="name" name="Name"><br>
+            <input type="text" id="name" name="Name" required><br>
             <label id="email-label" for="email" >eMail:&nbsp;</label>
             <input id="email" name="email" type="email" placeholder="you@wherever.com" required><br><br>
             <label id="name-contact-text" for="contact-text">Leave a note: </label><br>
-            <textarea id="contact-text" name="contact-text" rows="4" cols="50" placeholder="How can I help you?"></textarea>
+            <textarea id="contact-text" name="contact-text" rows="4" cols="50" placeholder="How can I help you?" required ></textarea>
             <br /><br />
             <button class="btn btn-info" form_id="contact-form" type="submit" id="submit" value="Submit">Submit</button>
             <br />
